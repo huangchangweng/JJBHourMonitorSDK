@@ -1,0 +1,392 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BB698E69289A72EB00DF4E30 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BB698E68289A72EB00DF4E30 /* AppDelegate.m */; };
+		BB698E6F289A72EB00DF4E30 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB698E6E289A72EB00DF4E30 /* ViewController.m */; };
+		BB698E72289A72EB00DF4E30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB698E70289A72EB00DF4E30 /* Main.storyboard */; };
+		BB698E74289A72ED00DF4E30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB698E73289A72ED00DF4E30 /* Assets.xcassets */; };
+		BB698E77289A72ED00DF4E30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB698E75289A72ED00DF4E30 /* LaunchScreen.storyboard */; };
+		BB698E7A289A72ED00DF4E30 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BB698E79289A72ED00DF4E30 /* main.m */; };
+		BB698E83289A73E600DF4E30 /* JJBHourMonitorSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB698E81289A73E600DF4E30 /* JJBHourMonitorSDK.framework */; };
+		BB698E84289A73E600DF4E30 /* JJBHourMonitorSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BB698E82289A73E600DF4E30 /* JJBHourMonitorSDK.bundle */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BB698E64289A72EB00DF4E30 /* JJBHourMonitorSDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JJBHourMonitorSDK.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB698E67289A72EB00DF4E30 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BB698E68289A72EB00DF4E30 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BB698E6D289A72EB00DF4E30 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BB698E6E289A72EB00DF4E30 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BB698E71289A72EB00DF4E30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BB698E73289A72ED00DF4E30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BB698E76289A72ED00DF4E30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BB698E78289A72ED00DF4E30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB698E79289A72ED00DF4E30 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BB698E81289A73E600DF4E30 /* JJBHourMonitorSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = JJBHourMonitorSDK.framework; sourceTree = "<group>"; };
+		BB698E82289A73E600DF4E30 /* JJBHourMonitorSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = JJBHourMonitorSDK.bundle; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BB698E61289A72EB00DF4E30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB698E83289A73E600DF4E30 /* JJBHourMonitorSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BB698E5B289A72EB00DF4E30 = {
+			isa = PBXGroup;
+			children = (
+				BB698E66289A72EB00DF4E30 /* JJBHourMonitorSDK */,
+				BB698E65289A72EB00DF4E30 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BB698E65289A72EB00DF4E30 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB698E64289A72EB00DF4E30 /* JJBHourMonitorSDK.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BB698E66289A72EB00DF4E30 /* JJBHourMonitorSDK */ = {
+			isa = PBXGroup;
+			children = (
+				BB698E80289A73B800DF4E30 /* JJBHourMonitorSDK */,
+				BB698E67289A72EB00DF4E30 /* AppDelegate.h */,
+				BB698E68289A72EB00DF4E30 /* AppDelegate.m */,
+				BB698E6D289A72EB00DF4E30 /* ViewController.h */,
+				BB698E6E289A72EB00DF4E30 /* ViewController.m */,
+				BB698E70289A72EB00DF4E30 /* Main.storyboard */,
+				BB698E73289A72ED00DF4E30 /* Assets.xcassets */,
+				BB698E75289A72ED00DF4E30 /* LaunchScreen.storyboard */,
+				BB698E78289A72ED00DF4E30 /* Info.plist */,
+				BB698E79289A72ED00DF4E30 /* main.m */,
+			);
+			path = JJBHourMonitorSDK;
+			sourceTree = "<group>";
+		};
+		BB698E80289A73B800DF4E30 /* JJBHourMonitorSDK */ = {
+			isa = PBXGroup;
+			children = (
+				BB698E82289A73E600DF4E30 /* JJBHourMonitorSDK.bundle */,
+				BB698E81289A73E600DF4E30 /* JJBHourMonitorSDK.framework */,
+			);
+			path = JJBHourMonitorSDK;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BB698E63289A72EB00DF4E30 /* JJBHourMonitorSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB698E7D289A72ED00DF4E30 /* Build configuration list for PBXNativeTarget "JJBHourMonitorSDK" */;
+			buildPhases = (
+				BB698E60289A72EB00DF4E30 /* Sources */,
+				BB698E61289A72EB00DF4E30 /* Frameworks */,
+				BB698E62289A72EB00DF4E30 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JJBHourMonitorSDK;
+			productName = JJBHourMonitorSDK;
+			productReference = BB698E64289A72EB00DF4E30 /* JJBHourMonitorSDK.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BB698E5C289A72EB00DF4E30 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					BB698E63289A72EB00DF4E30 = {
+						CreatedOnToolsVersion = 13.4;
+					};
+				};
+			};
+			buildConfigurationList = BB698E5F289A72EB00DF4E30 /* Build configuration list for PBXProject "JJBHourMonitorSDK" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BB698E5B289A72EB00DF4E30;
+			productRefGroup = BB698E65289A72EB00DF4E30 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BB698E63289A72EB00DF4E30 /* JJBHourMonitorSDK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BB698E62289A72EB00DF4E30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB698E77289A72ED00DF4E30 /* LaunchScreen.storyboard in Resources */,
+				BB698E74289A72ED00DF4E30 /* Assets.xcassets in Resources */,
+				BB698E84289A73E600DF4E30 /* JJBHourMonitorSDK.bundle in Resources */,
+				BB698E72289A72EB00DF4E30 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BB698E60289A72EB00DF4E30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB698E6F289A72EB00DF4E30 /* ViewController.m in Sources */,
+				BB698E69289A72EB00DF4E30 /* AppDelegate.m in Sources */,
+				BB698E7A289A72ED00DF4E30 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BB698E70289A72EB00DF4E30 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB698E71289A72EB00DF4E30 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BB698E75289A72ED00DF4E30 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB698E76289A72ED00DF4E30 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BB698E7B289A72ED00DF4E30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BB698E7C289A72ED00DF4E30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BB698E7E289A72ED00DF4E30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2RQCUR73R5;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/JJBHourMonitorSDK/JJBHourMonitorSDK",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JJBHourMonitorSDK/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "建教帮学时监管Demo";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jjb.JJBHourMonitorSDK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		BB698E7F289A72ED00DF4E30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2RQCUR73R5;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/JJBHourMonitorSDK/JJBHourMonitorSDK",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JJBHourMonitorSDK/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "建教帮学时监管Demo";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jjb.JJBHourMonitorSDK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BB698E5F289A72EB00DF4E30 /* Build configuration list for PBXProject "JJBHourMonitorSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB698E7B289A72ED00DF4E30 /* Debug */,
+				BB698E7C289A72ED00DF4E30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB698E7D289A72ED00DF4E30 /* Build configuration list for PBXNativeTarget "JJBHourMonitorSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB698E7E289A72ED00DF4E30 /* Debug */,
+				BB698E7F289A72ED00DF4E30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BB698E5C289A72EB00DF4E30 /* Project object */;
+}

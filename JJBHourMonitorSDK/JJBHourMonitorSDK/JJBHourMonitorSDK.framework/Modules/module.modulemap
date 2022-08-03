@@ -1,0 +1,6 @@
+framework module JJBHourMonitorSDK {
+  umbrella header "JJBHourMonitorSDK.h"
+
+  export *
+  module * { export * }
+}
