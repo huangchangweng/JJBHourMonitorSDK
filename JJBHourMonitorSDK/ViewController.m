@@ -6,10 +6,18 @@
 //
 
 #import "ViewController.h"
+#import "AppDelegate.h"
+
 #import <JJBHourMonitorSDK/JJBHourMonitorSDK.h>
 
-@interface ViewController ()<JJBStudyMonitorSDKDelegate>
+#import "ZFPlayer.h"
+#import "ZFAVPlayerManager.h"
+#import "ZFPlayerControlView.h"
 
+@interface ViewController ()<JJBStudyMonitorSDKDelegate>
+@property (weak, nonatomic) IBOutlet UIImageView *coverImageView;
+@property (nonatomic, strong) ZFPlayerController *player;
+@property (nonatomic, strong) ZFPlayerControlView *controlView;
 @end
 
 @implementation ViewController
@@ -18,6 +26,7 @@
     [super viewDidLoad];
     
     [self initSDK];
+    [self setupPlayer];
 }
 
 #pragma mark - Private Mehtod
@@ -54,22 +63,41 @@
     [[JJBStudyMonitorSDK shared] startSDKWithModel:startModel delegate:self];
 }
 
-#pragma mark - Response Event
+- (void)setupPlayer
+{
+    // ZFPlayer
+    ZFAVPlayerManager *playerManager = [[ZFAVPlayerManager alloc] init];
+    self.player = [ZFPlayerController playerWithPlayerManager:playerManager containerView:self.coverImageView];
+    self.player.controlView = self.controlView;
+    self.player.pauseWhenAppResignActive = NO;
+    
+    @weakify(self)
+    
+    // 横竖屏将要切换
+    self.player.orientationWillChange = ^(ZFPlayerController * _Nonnull player, BOOL isFullScreen) {
+        AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+        appDelegate.allowOrentitaionRotation = isFullScreen;
+    };
+    
+    // 播放时间改变
+    self.player.playerPlayTimeChanged = ^(id<ZFPlayerMediaPlayback>  _Nonnull asset, NSTimeInterval currentTime, NSTimeInterval duration){
+        [[JJBStudyMonitorSDK shared] updateStudySchedule:currentTime];
+    };
+    
+    // 播放完成
+    self.player.playerDidToEnd = ^(id  _Nonnull asset) {
+        @strongify(self)
+        [[JJBStudyMonitorSDK shared] updateStudySchedule:self.player.currentTime];
+    };
+}
 
-- (IBAction)actions:(UIButton *)sender {
-    // 初始化SDK
-    if (sender.tag == 0) {
-        sender.enabled = NO;
-        [self initSDK];
-    }
-    // 开始播放视频
-    else if (sender.tag == 1) {
-//        [self startPlayVideo];
-    }
-    // 结束播放视频
-    else if (sender.tag == 2) {
-//        [[JJBStudyMonitorSDK shared] endStudySchedule:self.videoSchedule];
-    }
+- (void)startPlay
+{
+    self.player.assetURLs = @[[NSURL URLWithString:@"https://vod.cqjjb.cn/customerTrans/79171af5dbc8d607a9ef750f5de64fd3/31ed50df-181f143072c-0004-69c1-ba4-801ce.mp4"]];
+    [self.player playTheIndex:0];
+    [self.controlView showTitle:nil
+                 coverURLString:nil
+                 fullScreenMode:ZFFullScreenModeAutomatic];
 }
 
 #pragma mark - JJBStudyMonitorSDKDelegate
@@ -80,6 +108,7 @@
 - (void)studyMonitorSDKInitSucceed
 {
     NSLog(@"SDK初始化成功");
+    [self startPlay];
 }
 
 /**
@@ -90,7 +119,6 @@
 - (void)studyMonitorSDKInitFailure:(NSString *)errCode errMessage:(NSString *)errMessage
 {
     NSLog(@"SDK初始化失败 errCode：%@ errMessage：%@", errCode, errMessage);
-//    [self.iniButton setEnabled:YES];
 }
 
 /**
@@ -98,9 +126,11 @@
  */
 - (JJBSDKValidateModel *)studyMonitorSDKTriggerValidate
 {
+    [self.player.currentPlayerManager pause];
+    
     JJBSDKValidateModel *model = [JJBSDKValidateModel new];
     model.imageUrl = @"http://www.baidu.com";
-//    model.progress = self.videoSchedule;
+    model.progress = self.player.currentTime;
     return model;
 }
 
@@ -109,7 +139,7 @@
  */
 - (void)studyMonitorSDKValidateSucceed
 {
-    
+    [self.player.currentPlayerManager play];
 }
 
 /**
@@ -128,6 +158,19 @@
 - (void)studyMonitorSDKOtherPlatformStudy
 {
     
+}
+
+#pragma mark - Getter & Setter
+
+- (ZFPlayerControlView *)controlView {
+    if (!_controlView) {
+        _controlView = [ZFPlayerControlView new];
+        _controlView.fastViewAnimated = YES;
+        _controlView.autoHiddenTimeInterval = 5;
+        _controlView.autoFadeTimeInterval = 0.25;
+        _controlView.portraitControlView.titleLabel.hidden = YES;
+    }
+    return _controlView;
 }
 
 @end

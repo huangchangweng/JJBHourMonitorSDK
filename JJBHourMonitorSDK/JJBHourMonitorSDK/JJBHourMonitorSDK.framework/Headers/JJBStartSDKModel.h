@@ -11,6 +11,6 @@
 
 // 初始化SDK对象
 @interface JJBStartSDKModel : NSObject
-@property (nonatomic, strong) JJBStudentInfoModel *studentInfo; ///< 【必填】学员信息
-@property (nonatomic, strong) JJBStudyInfoModel *studyInfo;     ///< 【必填】学习信息
+@property (nonatomic, strong) JJBStudentInfoModel *studentInfo; ///< 学员信息
+@property (nonatomic, strong) JJBStudyInfoModel *studyInfo;     ///< 学习信息
 @end
